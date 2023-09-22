@@ -1,0 +1,23 @@
+{
+  "name": "deusex",
+  "version": "0.1.0",
+  "description": "Deus Ex JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kossnocorp/deusex.git"
+  },
+  "keywords": [
+    "LLM",
+    "OpenAI"
+  ],
+  "author": "Sasha Koss <koss@nocorp.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kossnocorp/deusex/issues"
+  },
+  "homepage": "https://github.com/kossnocorp/deusex#readme"
+}
