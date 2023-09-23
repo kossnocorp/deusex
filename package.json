@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "Deus Ex JS",
   "main": "index.js",
+  "type": "module",
+  "bin": "./bin/deusex.mjs",
   "scripts": {
     "test": "vitest run"
   },
@@ -19,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/kossnocorp/deusex/issues"
   },
-  "homepage": "https://github.com/kossnocorp/deusex#readme"
+  "homepage": "https://github.com/kossnocorp/deusex#readme",
+  "dependencies": {
+    "@babel/generator": "^7.22.15",
+    "@babel/parser": "^7.22.16",
+    "@babel/traverse": "^7.22.20",
+    "@babel/types": "^7.22.19"
+  }
 }
