@@ -14,6 +14,7 @@ const [file] = process.argv.slice(2);
 const fileStr = await readFile(file, "utf-8");
 const ast = parse(fileStr, {
   sourceType: "module",
+  plugins: ["typescript"],
 });
 
 const newVariableDeclaration = t.variableDeclaration("const", [
@@ -22,4 +23,6 @@ const newVariableDeclaration = t.variableDeclaration("const", [
 
 ast.program.body.unshift(newVariableDeclaration);
 
-console.log(generate(ast).code);
+console.log(generate(ast, {
+  plugins: ["typescript"],
+}).code);
