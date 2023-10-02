@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "Deus Ex JS",
   "main": "index.js",
-  "type": "module",
-  "bin": "./bin/deusex.mjs",
+  "bin": "./bin/deusex.js",
   "scripts": {
     "test": "vitest run"
   },
@@ -27,6 +26,8 @@
     "@babel/parser": "^7.22.16",
     "@babel/plugin-syntax-typescript": "^7.22.5",
     "@babel/plugin-transform-typescript": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.0",
+    "@babel/register": "^7.22.15",
     "@babel/traverse": "^7.22.20",
     "@babel/types": "^7.22.19",
     "openai": "^4.10.0"
